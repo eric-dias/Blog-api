@@ -4,6 +4,8 @@ import PostUser from "@/components/postUser/postUser";
 import { Suspense } from "react";
 import { getPost } from "@/lib/data";
 
+const websiteDomain = "mongoteste4-git-master-eric-dias.vercel.app";
+
 export const generateMetadata = async ({ params }) => {
   const { slug } = params;
 
@@ -17,10 +19,9 @@ export const generateMetadata = async ({ params }) => {
 
 // FETCH DATA WITH AN API
 const getData = async (slug) => {
-  const res = await fetch(`https://mongoteste4-git-master-eric-dias.vercel.app/api/blog/${slug}`);
+  const res = await fetch(`https://${websiteDomain}/api/blog/${slug}`);
 
   if (!res.ok) {
-
     throw new Error("error to fetch api");
   }
 
@@ -31,10 +32,10 @@ const SinglePostPage = async ({ params }) => {
   const { slug } = params;
 
   //Get the post using the API
-  //const post = await getData(slug);
+  const post = await getData(slug);
 
   //Get the post using the function from data.js
-  const post = await getPost(slug);
+  //const post = await getPost(slug);
 
   return (
     <div className={styles.container}>
