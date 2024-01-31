@@ -31,10 +31,10 @@ const SinglePostPage = async ({ params }) => {
   const { slug } = params;
 
   //Get the post using the API
-  const post = await getData(slug);
+  //const post = await getData(slug);
 
   //Get the post using the function from data.js
-  //const post = await getPost(slug);
+  const post = await getPost(slug);
 
   return (
     <div className={styles.container}>
