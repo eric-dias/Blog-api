@@ -17,7 +17,7 @@ export const generateMetadata = async ({ params }) => {
 
 // FETCH DATA WITH AN API
 const getData = async (slug) => {
-  const res = await fetch(`https://mongoteste4.vercel.app/api/blog/${slug}`);
+  const res = await fetch(`https://mongoteste4-git-master-eric-dias.vercel.app/api/blog/${slug}`);
 
   if (!res.ok) {
 

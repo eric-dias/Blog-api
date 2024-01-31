@@ -5,7 +5,7 @@ import { getPosts } from "@/lib/data";
 // FETCH DATA WITH AN API
 
 const getData = async () => {
-  const res = await fetch("https://mongoteste4.vercel.app/api/blog");
+  const res = await fetch("https://mongoteste4-git-master-eric-dias.vercel.app/api/blog");
 
   if (!res.ok) {
     throw new Error("error to fetch api");
