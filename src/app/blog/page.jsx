@@ -7,7 +7,7 @@ const websiteDomain = "mongoteste4-git-master-eric-dias.vercel.app";
 // FETCH DATA WITH AN API
 
 const getData = async () => {
-   const res = await fetch(`https://${websiteDomain}/api/blog`);
+   const res = await fetch(`https://${websiteDomain}/api/blog`, {cache: "no-store"});
 
   if (!res.ok) {
     throw new Error("error to fetch api");

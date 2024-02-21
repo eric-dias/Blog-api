@@ -19,7 +19,9 @@ export const generateMetadata = async ({ params }) => {
 
 // FETCH DATA WITH AN API
 const getData = async (slug) => {
-  const res = await fetch(`https://${websiteDomain}/api/blog/${slug}`);
+  const res = await fetch(`https://${websiteDomain}/api/blog/${slug}`, {
+    cache: "no-cache",
+  });
 
   if (!res.ok) {
     throw new Error("error to fetch api");
