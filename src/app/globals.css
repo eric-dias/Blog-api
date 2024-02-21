@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 :root {
   --bg: #0d0c22;
   --bgSoft: #2d2b42;
@@ -15,6 +17,7 @@
 body {
   background-color: var(--bg);
   color: var(--text);
+  font-family: "Inter", sans-serif;
 }
 
 .ThemeGojo {
