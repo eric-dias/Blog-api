@@ -20,16 +20,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.ThemeGojo {
+.DarkTheme {
   background-color: var(--bg);
 }
 
-.ThemeSukuna {
-  background-color: rgb(99, 54, 54);
-}
-
-.ThemeItadori {
-  background-color: orange;
+.LightTheme {
+  background-color: rgb(230, 205, 159);
 }
 
 a {

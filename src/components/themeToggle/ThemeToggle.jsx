@@ -9,9 +9,8 @@ const ThemeToggle = () => {
 
   return (
     <div className={styles.container}>
-      <button onClick={() => selectTheme("ThemeItadori")}>I</button>
-      <button onClick={() => selectTheme("ThemeGojo")}>G</button>
-      <button onClick={() => selectTheme("ThemeSukuna")}>S</button>
+      <button onClick={() => selectTheme("LightTheme")}>L</button>
+      <button onClick={() => selectTheme("DarkTheme")}>D</button>
     </div>
   );
 };
