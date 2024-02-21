@@ -12,7 +12,7 @@ const PostCard = ({ post }) => {
           </div>
         )}
 
-        <span className={styles.date}>{post.createdAt.slice(0, 10)}</span>
+        <span className={styles.date}>{post.createdAt.slice(2, 10)}</span>
       </div>
       <div className={styles.botContainer}>
         <h1 className={styles.title}>{post.title}</h1>
