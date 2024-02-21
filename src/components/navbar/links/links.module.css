@@ -10,8 +10,6 @@
   font-weight: bold;
 }
 
-
-
 .menuButton, .mobileLinksList {
   display: none;
 }
@@ -39,6 +37,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    z-index: 1000;
   }
 
  
