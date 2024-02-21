@@ -20,7 +20,7 @@ export const generateMetadata = async ({ params }) => {
 // FETCH DATA WITH AN API
 const getData = async (slug) => {
   const res = await fetch(`https://${websiteDomain}/api/blog/${slug}`, {
-    cache: "no-cache",
+    cache: "no-store",
   });
 
   if (!res.ok) {
